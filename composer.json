@@ -1,0 +1,33 @@
+{
+    "name": "onethirtyone/laravel-google-drive",
+    "description": "Package to interact with Google drive",
+    "require": {
+        "google/apiclient": "^2.11",
+        "illuminate/support": "^8.70",
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "OneThirtyOne\\GoogleDrive\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "OneThirtyOne\\GoogleDrive\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "OneThirtyOne\\GoogleDrive\\ServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Robb Fountain",
+            "email": "robb@131studios.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
