@@ -2,12 +2,14 @@
 
 namespace OneThirtyOne\GoogleDrive;
 
+use Illuminate\Support\Str;
+
 class File
 {
     /**
      * @var
      */
-    protected $metaData;
+    public $metaData;
 
     /**
      * @var
@@ -61,4 +63,12 @@ class File
             return $content;
         }
     }
+
+    public function __get($property)
+    {
+        $method = 'get'. Str::studly($property);
+
+        return $this->metaData->$method();
+    }
+
 }
