@@ -3,7 +3,7 @@
     "description": "Package to interact with Google drive",
     "require": {
         "google/apiclient": "^2.11",
-        "illuminate/support": "^8.70",
+        "illuminate/support": "^8.70"
     },
     "license": "MIT",
     "autoload": {
